@@ -19,7 +19,7 @@ class CreateUsersTable extends Migration
             $table->string('second_name');
             $table->string('third_name');
             $table->integer('id_users_type')->unsigned();
-            $table->foreign('id_users_type')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('id_users_type')->references('id')->on('users_types')->onDelete('cascade');
             $table->string('password');
             $table->integer('rate');
         });
